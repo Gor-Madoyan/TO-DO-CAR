@@ -1,0 +1,34 @@
+
+<div>
+    <p>Id <input [(ngModel)] = 'id'></p>
+</div>
+<div>
+   <p>Mark <input [(ngModel)] = 'mark'></p> 
+</div>
+<div>
+    <p>Color <input [(ngModel)] = 'color'></p>
+</div>
+
+<div>
+    <p>Year <input [(ngModel)] = 'year'></p>
+</div>
+<button (click) = 'creatCar()'>Creat Car</button> 
+
+<app-child  *ngFor = 'let car of CarData' [carArr] = 'car' (emitCar) = clearCarItem($event)   ></app-child>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
